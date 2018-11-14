@@ -35,10 +35,11 @@ $ abrt-cli list
 $ abrt-cli info /dir/to/report
 ```
   * To enable auto reporting:
+    * When enabled , the μReport, which is normally sent at the beginning of the crash-reporting process, is sent immediately after a crash is detected
+    * This prevents duplicate support cases based on identical crashes
 ```  
 # abrt-auto-reporting enable
 ```
-    *  When enabled , the μReport, which is normally sent at the beginning of the crash-reporting process, is sent immediately after a crash is detected
-    * This prevents duplicate support cases based on identical crashes
+
 * Cleanup via abrt-cleanup.sh
   * Optional if demo VM is disposable
