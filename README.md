@@ -7,22 +7,23 @@ ABRT consists of the abrtd daemon and a number of system services and utilities 
 
 ABRT currently supports the detection of crashes in applications written in the C, C++, Java, Python, and Ruby programming languages, as well as X.Org crashes, kernel oopses, and kernel panics.
 
-Whenever a problem is detected, ABRT compares it with all existing problem data and determines whether that same problem has already been recorded. If it has, the existing problem data is updated, and the most recent (duplicate) problem is not recorded again. If the problem is not recognized by ABRT, a problem-data directory is created. A problem-data directory typically consists of files such as: analyzer, architecture, coredump, cmdline, executable, kernel, os_release, reason, time, and uid. 
+Whenever a problem is detected, ABRT compares it with all existing problem data and determines whether that same problem has already been recorded. If it has, the existing problem data is updated, and the most recent (duplicate) problem is not recorded again. If the problem is not recognized by ABRT, a problem-data directory is created. A problem-data directory typically consists of files such as: analyzer, architecture, coredump, cmdline, executable, kernel, os_release, reason, time, and uid.
 
-Install:
+### Install:
 *	GUI -- # yum install abrt-desktop
 *	CLI -- # yum install abrt-cli
 *	Mail -- # yum install libreport-plugin-mailx
 *	Mail Conf -- edit /etc/libreport/plugins/mailx.conf
 *	Other modules -- # yum install (see table)
 
-Test (example, could also use gedit or firefox):
+### Test: (example, could also use gedit or firefox):
 ```
 $ sleep 100 &
 [1] 2823
 $ kill -s SEGV 2823
 ```
 
+### Packages
 Language/Project | Package
 ------------- | -----------
 C or C++ | abrt-addon-ccpp

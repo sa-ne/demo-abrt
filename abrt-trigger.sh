@@ -3,4 +3,4 @@
 # The following will trigger an event for ABRT to capture and analyze
 sleep 100 &
 read -p "Press Enter to trigger an event for ABRT... " NULL
-kill -s SEGV $(bg | grep sleep)
+kill -s SEGV $(ps | grep sleep | awk '{print $1}')
