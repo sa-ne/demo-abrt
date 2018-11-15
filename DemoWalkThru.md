@@ -2,7 +2,7 @@
 
 ### Requirements
 * ** Run on server with Desktop/GUI **
-* Minimum: 1vCPU x 2G mem
+* Minimum VM: 1vCPU x 2G mem
 * Optional: non-root user for GUI login
 
 ### WalkThru:
