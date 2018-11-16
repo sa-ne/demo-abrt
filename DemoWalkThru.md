@@ -1,4 +1,4 @@
-## Demo WalkThru:
+## ABRT Demo WalkThru:
 
 ### Requirements
 * ** Run on server with Desktop/GUI **
