@@ -18,27 +18,27 @@
 * Simulate bug crash
   * Use abrt-trigger.sh or syntax below
 ```
-$ sleep 100 &
-$ kill -s SEGV [pid from above cmd]
+      $ sleep 100 &
+      $ kill -s SEGV [pid from above cmd]
 ```
   * Show crash report in GUI
     * Look for pop-up (may not appear), click on Report button
 * Show CLI
   * To view all ABRT alerts
 ```
-$ abrt-cli list
+      $ abrt-cli list
 ```
   * To view a specific report
     * --verbose, -v
     * --detailed, -d   
 ```
-$ abrt-cli info /dir/to/report
+      $ abrt-cli info /dir/to/report
 ```
   * To enable auto reporting:
     * When enabled , the μReport, which is normally sent at the beginning of the crash-reporting process, is sent immediately after a crash is detected
     * This prevents duplicate support cases based on identical crashes
 ```  
-# abrt-auto-reporting enable
+      # abrt-auto-reporting enable
 ```
 
 * Cleanup via abrt-cleanup.sh
